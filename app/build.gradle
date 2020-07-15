@@ -50,7 +50,7 @@ dependencies {
 
     kapt project(path: ':ComponentCompiler')
     implementation project(path: ':ComponentImpl')
-  //  implementation rootProject.ext.dependencies["component_impl"]
+ //   implementation rootProject.ext.dependencies["component_impl"]
  //   api 'com.github.xiaojinzi123.Component:component-impl:1.8.2.3-androidx'
  //   kapt "com.github.xiaojinzi123.Component:component-compiler:1.8.2.3-androidx"
 

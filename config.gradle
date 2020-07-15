@@ -17,7 +17,7 @@ ext {
             targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0.1",
-            component_version              : "1.8.2.3"
+            component_version              : "1.8.2.3.2"
     ]
     //google support配置
     supportx = [
@@ -34,8 +34,8 @@ ext {
     dependencies = [
             //  "component_impl_rx"                   : "com.github.xiaojinzi123.Component:component-impl-rx:1.8.1.1-androidx",
             //"component_compiler"                  : "com.github.xiaojinzi123.Component:component-compiler:1.8.1.1-androidx",
-            "component_impl"                      : "com.github.ganzhex2019.Component:component-impl:1.8.2.3",
-            "component_compiler"                  : "com.github.ganzhex2019.Component:component-compiler:1.8.2.3",
+            "component_impl"                      : "com.github.ganzhex2019.Component:component-impl:1.8.2.3.1",
+            "component_compiler"                  : "com.github.ganzhex2019.Component:component-compiler:1.8.2.3.1",
             "rxandroid"                           : "io.reactivex.rxjava2:rxandroid:2.1.1",
             "rxjava"                              : "io.reactivex.rxjava2:rxjava:2.2.19",
             "rxkotlin"                            : "io.reactivex.rxjava2:rxkotlin:2.4.0",
