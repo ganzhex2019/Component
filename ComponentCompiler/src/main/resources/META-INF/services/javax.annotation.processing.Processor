@@ -1,0 +1,8 @@
+com.cambodia.zhanbang.component.ModuleAppProcessor
+com.cambodia.zhanbang.component.RouterProcessor
+com.cambodia.zhanbang.component.RouterDegradeProcessor
+com.cambodia.zhanbang.component.InterceptorProcessor
+com.cambodia.zhanbang.component.ServiceProcessor
+com.cambodia.zhanbang.component.FragmentProcessor
+com.cambodia.zhanbang.component.AutowireProcessor
+com.cambodia.zhanbang.component.RouterApiProcessor

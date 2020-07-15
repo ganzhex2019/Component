@@ -1,0 +1,8 @@
+include ':moduleb'
+include ':modulea'
+include ':ComponentRxImpl'
+include ':ComponentImpl'
+include ':ComponentCompiler'
+include ':ComponentApi'
+include ':app'
+rootProject.name = "Component"

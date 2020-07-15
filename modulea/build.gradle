@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+   //     applicationId "com.cambodia.zhanbang.modulea"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                // 配置业务模块的模块名称
+                arguments = ["HOST": "modulea"]
+                // arguments = ["HOST": "app", "RouterDoc": project.property("component_router_doc_folder")]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.supportx["kotlin_stdlib_jdk"]
+    implementation rootProject.ext.supportx["appcompat"]
+    implementation rootProject.ext.supportx["core_ktx"]
+    implementation rootProject.ext.supportx["constraintlayout"]
+
+
+    testImplementation rootProject.ext.supportx["junit"]
+    androidTestImplementation rootProject.ext.supportx["test_ext_junit"]
+    androidTestImplementation rootProject.ext.supportx["espresso_core"]
+
+    kapt project(path: ':ComponentCompiler')
+    api project(path: ':ComponentImpl')
+
+//    api 'com.github.xiaojinzi123.Component:component-impl:1.8.2.3-androidx'
+//    kapt "com.github.xiaojinzi123.Component:component-compiler:1.8.2.3-androidx"
+
+}
