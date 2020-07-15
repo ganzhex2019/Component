@@ -5,7 +5,7 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
     implementation group: 'org.ow2.asm', name: 'asm-all', version: '5.2'
-    implementation 'com.android.tools.build:gradle:3.3.0'
+    implementation 'com.android.tools.build:gradle:3.6.3'
     implementation 'com.google.code.gson:gson:2.8.5'
 }
 repositories {
@@ -16,7 +16,7 @@ sourceCompatibility = "8"
 targetCompatibility = "8"
 
 group='com.cambodia.zhanbang.component'
-version="${android.component_version}"
+version="1.8.2.3.4"
 archivesBaseName='component-plugin'
 
 uploadArchives{
