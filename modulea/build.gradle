@@ -50,8 +50,8 @@ dependencies {
     androidTestImplementation rootProject.ext.supportx["test_ext_junit"]
     androidTestImplementation rootProject.ext.supportx["espresso_core"]
 
-   // kapt project(path: ':ComponentCompiler')
-   // api project(path: ':ComponentImpl')
+    kapt project(path: ':ComponentCompiler')
+    api project(path: ':ComponentImpl')
 
  //   api   rootProject.ext.dependencies["component_impl"]
  //   kapt  rootProject.ext.dependencies["component_compiler"]
