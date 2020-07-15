@@ -50,10 +50,12 @@ dependencies {
     androidTestImplementation rootProject.ext.supportx["test_ext_junit"]
     androidTestImplementation rootProject.ext.supportx["espresso_core"]
 
-    kapt project(path: ':ComponentCompiler')
-    api project(path: ':ComponentImpl')
+   // kapt project(path: ':ComponentCompiler')
+   // api project(path: ':ComponentImpl')
 
-//    api 'com.github.xiaojinzi123.Component:component-impl:1.8.2.3-androidx'
-//    kapt "com.github.xiaojinzi123.Component:component-compiler:1.8.2.3-androidx"
+ //   api   rootProject.ext.dependencies["component_impl"]
+ //   kapt  rootProject.ext.dependencies["component_compiler"]
+
+  //  implementation 'com.github.ganzhex2019:LogLib:1.0.0'
 
 }

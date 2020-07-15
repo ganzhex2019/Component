@@ -1,3 +1,4 @@
+include ':ComponentPlugin'
 include ':moduleb'
 include ':modulea'
 include ':ComponentRxImpl'
